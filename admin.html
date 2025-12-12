@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+    <h2>Admin Login</h2>
+
+    <form id="loginForm">
+        <input id="email" placeholder="Email" style="padding:10px; width:250px;"><br><br>
+        <input id="password" type="password" placeholder="Password" style="padding:10px; width:250px;"><br><br>
+        <button class="btn" type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+document.getElementById('loginForm').onsubmit = (e) => {
+    e.preventDefault();
+
+    let email = document.getElementById('email').value;
+    let pass = document.getElementById('password').value;
+
+    if (email === "shereboyofficial1515@gmail.com" && pass === "Madamedon15") {
+        alert("Login successful (Demo only). Full upload system coming.");
+    } else {
+        alert("Invalid login.");
+    }
+};
+</script>
+
+</body>
+</html>
